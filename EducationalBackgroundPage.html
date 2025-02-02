@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Educational Background Page</title>
+    <link rel="stylesheet" href="EducationalBackgroundPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Educational Background</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="HomePage.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="ITPage.html">IT</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="ArchitecturePage.html">Architecture</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="EducationalBackgroundPage.html">Educational Background</a></div>
+                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div> -->
+                <!-- <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div> -->
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="HomePage.html">Home</a>
+                <a href="ITPage.html">IT</a>
+                <a href="ArchitecturePage.html">Architecture</a>
+                <a href="EducationalBackgroundPage.html">Educational Background</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="containers" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="card">
+           <div class="img">
+              <img src="lpsci.jpg">
+           </div>
+           <div class="top-text">
+              <div class="name">
+                 Las Pinas City National Science High School
+              </div>
+              <p>
+                 High School (2014-2020)
+              </p>
+           </div>
+           <div class="bottom-text">
+              <div class="text">
+                 I studied in LPCNSHS from 7th grade to 12th grade, under the STEM track. 
+              </div>
+              <!-- <div class="btn">
+                 <a href="#">Read more</a>
+              </div> -->
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="ust.jpg">
+           </div>
+           <div class="top-text">
+              <div class="name">
+                 University of Santo Tomas
+              </div>
+              <p>
+                 College (2020-2022)
+              </p>
+           </div>
+           <div class="bottom-text">
+              <div class="text">
+                 I studied Architecture in UST for two years. 
+              </div>
+              <!-- <div class="btn">
+                 <a href="#">Read more</a>
+              </div> -->
+           </div>
+        </div>
+        <div class="card">
+           <div class="img">
+              <img src="southville.jpg">
+           </div>
+           <div class="top-text">
+              <div class="name">
+                 Southville International School and Colleges
+              </div>
+              <p>
+                 College (2022-2026)
+              </p>
+           </div>
+           <div class="bottom-text">
+              <div class="text">
+                 I graduated Information Technology specialized in Data Science and Business Analytics in SISC. 
+              </div>
+              <!-- <div class="btn">
+                 <a href="#">Read more</a>
+              </div> -->
+           </div>
+        </div>
+     </div>
+       
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
